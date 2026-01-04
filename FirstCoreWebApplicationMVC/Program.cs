@@ -2,7 +2,9 @@ namespace FirstCoreWebApplicationMVC
 {
     public class Program
     {
-        public static void Main(string[] args)
+        /** 1. Default ASP.NET Core 8.0 MVC Program.cs structure
+         *
+         * public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
 
@@ -26,6 +28,24 @@ namespace FirstCoreWebApplicationMVC
                 name: "default",
                 pattern: "{controller=Home}/{action=Index}/{id?}");
 
+            app.Run();
+        }**/
+
+        // 2. Accessing Configuration Values from the appSettings.json file in ASP.NET Core 8.0 Program.cs
+        public static void Main(string[] args)
+        {
+            var builder = WebApplication.CreateBuilder(args);
+
+            var app = builder.Build();
+
+            //ConfigurationManager configuration = builder.Configuration;
+            //Get the Configuration Value using Generic GetValue
+            string? MyCustomKeyValue1 = builder.Configuration.GetValue<string>("MyCustomKey", "DefaultValue");
+
+            //Get the Configuration Value using Indexer
+            string? MyCustomKeyValue = builder.Configuration["MyCustomKey"];
+
+            app.MapGet("/", () => $"{MyCustomKeyValue}");
             app.Run();
         }
     }
