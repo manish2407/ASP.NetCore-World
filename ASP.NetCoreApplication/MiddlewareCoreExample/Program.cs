@@ -1,6 +1,6 @@
-/** 1. Default ASP.NET Core Web Application setup with middleware configuration.
- * 
- * var builder = WebApplication.CreateBuilder(args);
+/* //1. Default ASP.NET Core Web Application setup with middleware configuration.
+  
+  var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
@@ -22,12 +22,11 @@ app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
 
-app.Run(); **/
+app.Run(); */
 
-
-/** 2. Using Run Extension Method to Configure Inline Middleware Component.
- * 
- * 
+/* //2. Using Run Extension Method to Configure Inline Middleware Component.
+  
+ 
 var builder = WebApplication.CreateBuilder(args);
 
 // Builds the web application based on the configured settings
@@ -40,12 +39,10 @@ app.Run(async (context) =>
 // Starts the web application which begins listening for incoming requests
 app.Run(); **/
 
-
-
-/** 3. Using Multiple Run Extension Methods to Configure Inline Middleware Components.
- * We need to use Use() Extension Method to chain multiple middleware components.
- * 
- * // Initializes the configuration for the web application
+/* //3. Using Multiple Run Extension Methods to Configure Inline Middleware Components.
+  //We need to use Use() Extension Method to chain multiple middleware components.
+  
+  // Initializes the configuration for the web application
             var builder = WebApplication.CreateBuilder(args);
             
             // Builds the web application based on the configured settings
@@ -64,8 +61,8 @@ app.Run(); **/
             // Starts the web application which begins listening for incoming requests
             app.Run();**/
 
-/** 4. Using Multiple Use Extension Methods to Configure Inline Middleware Components.
- * We need to use Use() Extension Method to chain multiple middleware components as Run() does not support chaining next() to invoke the next middleware.
+/* //4. Using Multiple Use Extension Methods to Configure Inline Middleware Components.
+  // We need to use Use() Extension Method to chain multiple middleware components as Run() does not support chaining next() to invoke the next middleware.
   // Initializes the configuration for the web application
             var builder = WebApplication.CreateBuilder(args);
             
@@ -91,7 +88,7 @@ app.Run(); **/
     });
 
     // Starts the web application which begins listening for incoming requests
-    app.Run(); **/
+    app.Run(); */
 
 /* //5. Instead of passing the request delegate as an inline anonymous method, we can define it in a separate method and pass it like below 
 
@@ -120,6 +117,39 @@ app.Run(); **/
         }
     } */
 
+/* //6. Using Custom Middleware Class in ASP.NET Core Application 
+// Initializes the configuration for the web application
+using MiddlewareCoreExample.Middleware;
+
+var builder = WebApplication.CreateBuilder(args);
+
+// Builds the web application based on the configured settings
+var app = builder.Build();
+
+//Using Custom Middleware Class
+app.UseMiddleware<CustomMiddleware>(); 
+
+//Configuring First Middleware Component using Use Extension Method
+app.Use(async (context, next) =>
+{
+    await context.Response.WriteAsync("Getting Response from First Middleware");
+    await next();
+});
+//Configuring Second Middleware Component using Run Extension Method
+app.Use(async (context, next) =>
+{
+    await context.Response.WriteAsync("\nGetting Response from Second Middleware");
+    await next();
+});
+
+//Configuring Second Middleware Component using Run Extension Method
+app.Run(async (context) =>
+{
+    await context.Response.WriteAsync("\nGetting Response from Final Middleware");
+});
+
+// Starts the web application which begins listening for incoming requests
+app.Run(); */
 
 
 
