@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASP.NetCoreApplication", "A
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FirstCoreWebApplicationMVC", "..\FirstCoreWebApplicationMVC\FirstCoreWebApplicationMVC.csproj", "{39496C6B-69D6-4289-BB05-4E17F98939D2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiddlewareCoreExample", "MiddlewareCoreExample\MiddlewareCoreExample.csproj", "{A30B8B0F-3E83-466A-99DF-D2896B416539}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiddlewareCoreExample", "..\MiddlewareCoreExample\MiddlewareCoreExample.csproj", "{F34EA90E-8715-45BB-80EA-5A50DF1A3BE8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +23,10 @@ Global
 		{39496C6B-69D6-4289-BB05-4E17F98939D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{39496C6B-69D6-4289-BB05-4E17F98939D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{39496C6B-69D6-4289-BB05-4E17F98939D2}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A30B8B0F-3E83-466A-99DF-D2896B416539}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A30B8B0F-3E83-466A-99DF-D2896B416539}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A30B8B0F-3E83-466A-99DF-D2896B416539}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A30B8B0F-3E83-466A-99DF-D2896B416539}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F34EA90E-8715-45BB-80EA-5A50DF1A3BE8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F34EA90E-8715-45BB-80EA-5A50DF1A3BE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F34EA90E-8715-45BB-80EA-5A50DF1A3BE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F34EA90E-8715-45BB-80EA-5A50DF1A3BE8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
