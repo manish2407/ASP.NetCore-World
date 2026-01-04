@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36811.4 d17.14
+VisualStudioVersion = 17.14.36811.4
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASP.NetCoreApplication", "ASP.NetCoreApplication\ASP.NetCoreApplication.csproj", "{FBBDD856-A6C3-42C4-86B3-67CD6D4129A6}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FirstCoreWebApplicationMVC", "..\FirstCoreWebApplicationMVC\FirstCoreWebApplicationMVC.csproj", "{39496C6B-69D6-4289-BB05-4E17F98939D2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiddlewareCoreExample", "MiddlewareCoreExample\MiddlewareCoreExample.csproj", "{A30B8B0F-3E83-466A-99DF-D2896B416539}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{39496C6B-69D6-4289-BB05-4E17F98939D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{39496C6B-69D6-4289-BB05-4E17F98939D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{39496C6B-69D6-4289-BB05-4E17F98939D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A30B8B0F-3E83-466A-99DF-D2896B416539}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A30B8B0F-3E83-466A-99DF-D2896B416539}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A30B8B0F-3E83-466A-99DF-D2896B416539}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A30B8B0F-3E83-466A-99DF-D2896B416539}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
