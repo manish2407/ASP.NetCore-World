@@ -1,3 +1,5 @@
+using ProductManagement.Services;
+
 namespace ProductManagement
 {
     public class Program
@@ -8,6 +10,9 @@ namespace ProductManagement
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
+
+            // Register the product service
+            builder.Services.AddScoped<IProductService, ProductService>();
 
             var app = builder.Build();
 
@@ -28,7 +33,7 @@ namespace ProductManagement
 
             app.MapControllerRoute(
                 name: "default",
-                pattern: "{controller=Home}/{action=Index}/{id?}");
+                pattern: "{controller=Product}/{action=Index}/{id?}");
 
             app.Run();
         }
