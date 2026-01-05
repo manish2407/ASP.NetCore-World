@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiddlewareCoreExample", "..
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductManagement", "..\ProductManagement\ProductManagement.csproj", "{527A7FCB-9922-4275-9D49-65AA6FC658D3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASP.NETCoreEmptywithMVC", "..\ASP.NETCoreEmptywithMVC\ASP.NETCoreEmptywithMVC.csproj", "{0FD0DF0C-184B-4B17-916F-785B7D08C747}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{527A7FCB-9922-4275-9D49-65AA6FC658D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{527A7FCB-9922-4275-9D49-65AA6FC658D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{527A7FCB-9922-4275-9D49-65AA6FC658D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0FD0DF0C-184B-4B17-916F-785B7D08C747}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0FD0DF0C-184B-4B17-916F-785B7D08C747}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0FD0DF0C-184B-4B17-916F-785B7D08C747}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0FD0DF0C-184B-4B17-916F-785B7D08C747}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
