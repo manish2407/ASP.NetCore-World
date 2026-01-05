@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FirstCoreWebApplicationMVC"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiddlewareCoreExample", "..\MiddlewareCoreExample\MiddlewareCoreExample.csproj", "{F34EA90E-8715-45BB-80EA-5A50DF1A3BE8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductManagement", "..\ProductManagement\ProductManagement.csproj", "{527A7FCB-9922-4275-9D49-65AA6FC658D3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{F34EA90E-8715-45BB-80EA-5A50DF1A3BE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F34EA90E-8715-45BB-80EA-5A50DF1A3BE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F34EA90E-8715-45BB-80EA-5A50DF1A3BE8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{527A7FCB-9922-4275-9D49-65AA6FC658D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{527A7FCB-9922-4275-9D49-65AA6FC658D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{527A7FCB-9922-4275-9D49-65AA6FC658D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{527A7FCB-9922-4275-9D49-65AA6FC658D3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
