@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASP.NETCoreEmptywithMVC", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControllerImplementation", "..\ControllerImplementation\ControllerImplementation.csproj", "{15AFF45A-4638-4464-97FC-B37724A9DAFA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DependencyInjection", "..\DependencyInjection\DependencyInjection.csproj", "{9BD85162-EFE8-418E-88A8-10EA4BA1ADE9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{15AFF45A-4638-4464-97FC-B37724A9DAFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{15AFF45A-4638-4464-97FC-B37724A9DAFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{15AFF45A-4638-4464-97FC-B37724A9DAFA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9BD85162-EFE8-418E-88A8-10EA4BA1ADE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BD85162-EFE8-418E-88A8-10EA4BA1ADE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BD85162-EFE8-418E-88A8-10EA4BA1ADE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BD85162-EFE8-418E-88A8-10EA4BA1ADE9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
