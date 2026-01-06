@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductManagement", "..\Pro
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASP.NETCoreEmptywithMVC", "..\ASP.NETCoreEmptywithMVC\ASP.NETCoreEmptywithMVC.csproj", "{0FD0DF0C-184B-4B17-916F-785B7D08C747}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControllerImplementation", "..\ControllerImplementation\ControllerImplementation.csproj", "{15AFF45A-4638-4464-97FC-B37724A9DAFA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{0FD0DF0C-184B-4B17-916F-785B7D08C747}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0FD0DF0C-184B-4B17-916F-785B7D08C747}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0FD0DF0C-184B-4B17-916F-785B7D08C747}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15AFF45A-4638-4464-97FC-B37724A9DAFA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15AFF45A-4638-4464-97FC-B37724A9DAFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15AFF45A-4638-4464-97FC-B37724A9DAFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15AFF45A-4638-4464-97FC-B37724A9DAFA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
