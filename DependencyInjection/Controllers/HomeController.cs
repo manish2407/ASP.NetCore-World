@@ -46,6 +46,22 @@ namespace DependencyInjection.Controllers
             return Json(allStudentDetails);
         }*/
 
+        public JsonResult Index()
+        {
+            var services = this.HttpContext.RequestServices;
+
+            IStudentRepository? _repository = (IStudentRepository?)services.GetService(typeof(IStudentRepository));
+            List<Student>? allStudentDetails = _repository?.GetAllStudent();
+            return Json(allStudentDetails);
+        }
+        public JsonResult GetStudentDetails(int Id)
+        {
+            var services = this.HttpContext.RequestServices;
+            IStudentRepository? _repository = (IStudentRepository?)services.GetService(typeof(IStudentRepository));
+            Student? studentDetails = _repository?.GetStudentById(Id);
+            return Json(studentDetails);
+        }
+
 
     }
 }
