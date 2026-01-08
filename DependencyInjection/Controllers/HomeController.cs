@@ -5,7 +5,8 @@ namespace DependencyInjection.Controllers
 {
     public class HomeController : Controller
     {
-        public JsonResult Index()
+        // Without Dependency Injection
+        /*public JsonResult Index()
         {
             StudentRepository repository = new StudentRepository();
             List<Student> allStudentDetails = repository.GetAllStudent();
@@ -16,6 +17,27 @@ namespace DependencyInjection.Controllers
             StudentRepository repository = new StudentRepository();
             Student studentDetails = repository.GetStudentById(Id);
             return Json(studentDetails);
+        }*/
+
+        //With Dependency Injection
+        //Create a reference variable of IStudentRepository
+        private readonly IStudentRepository? _repository = null;
+        //Initialize the variable through constructor
+        public HomeController(IStudentRepository repository)
+        {
+            _repository = repository;
         }
+        public JsonResult Index()
+        {
+            List<Student>? allStudentDetails = _repository?.GetAllStudent();
+            return Json(allStudentDetails);
+        }
+        public JsonResult GetStudentDetails(int Id)
+        {
+            Student? studentDetails = _repository?.GetStudentById(Id);
+            return Json(studentDetails);
+        }
+
+
     }
 }
