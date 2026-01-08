@@ -19,7 +19,7 @@ namespace DependencyInjection.Controllers
             return Json(studentDetails);
         }*/
 
-        //With Dependency Injection
+        /* // Constructor Dependency Injection
         //Create a reference variable of IStudentRepository
         private readonly IStudentRepository? _repository = null;
         //Initialize the variable through constructor
@@ -36,7 +36,15 @@ namespace DependencyInjection.Controllers
         {
             Student? studentDetails = _repository?.GetStudentById(Id);
             return Json(studentDetails);
-        }
+        }*/
+
+
+        /*// Method Dependency Injection
+        public JsonResult Index([FromServices] IStudentRepository repository)
+        {
+            List<Student> allStudentDetails = repository.GetAllStudent();
+            return Json(allStudentDetails);
+        }*/
 
 
     }
