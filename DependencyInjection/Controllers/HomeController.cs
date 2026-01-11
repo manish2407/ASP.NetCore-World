@@ -19,6 +19,8 @@ namespace DependencyInjection.Controllers
             return Json(studentDetails);
         }*/
 
+
+
         /* // Constructor Dependency Injection
         //Create a reference variable of IStudentRepository
         private readonly IStudentRepository? _repository = null;
@@ -46,6 +48,8 @@ namespace DependencyInjection.Controllers
             return Json(allStudentDetails);
         }*/
 
+        /*
+        //Property Dependency Injection
         public JsonResult Index()
         {
             var services = this.HttpContext.RequestServices;
@@ -60,7 +64,7 @@ namespace DependencyInjection.Controllers
             IStudentRepository? _repository = (IStudentRepository?)services.GetService(typeof(IStudentRepository));
             Student? studentDetails = _repository?.GetStudentById(Id);
             return Json(studentDetails);
-        }
+        }*/
 
 
     }
