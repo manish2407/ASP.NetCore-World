@@ -8,7 +8,8 @@ namespace PassingDataFromControllerToView.Controllers
     {
         public ViewResult Index()
         {
-            //String string Data
+            /*
+            //1. Use of ViewData to get the data from COntoller to View
             ViewData["Title"] = "Student Details Page";
             ViewData["Header"] = "Student Details";
             Student student = new Student()
@@ -21,6 +22,20 @@ namespace PassingDataFromControllerToView.Controllers
             };
             //storing Student Data
             ViewData["Student"] = student;
+            return View();*/
+
+            //2. Use of ViewBag to get the data from COntoller to View
+            ViewBag.Title = "Student Details Page";
+            ViewBag.Header = "Student Details";
+            Student student = new Student()
+            {
+                StudentId = 101,
+                Name = "James",
+                Branch = "CSE",
+                Section = "A",
+                Gender = "Male"
+            };
+            ViewBag.Student = student;
             return View();
         }
     }
