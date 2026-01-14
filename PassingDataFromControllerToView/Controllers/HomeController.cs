@@ -24,6 +24,7 @@ namespace PassingDataFromControllerToView.Controllers
             ViewData["Student"] = student;
             return View();*/
 
+            /*
             //2. Use of ViewBag to get the data from COntoller to View
             ViewBag.Title = "Student Details Page";
             ViewBag.Header = "Student Details";
@@ -36,7 +37,10 @@ namespace PassingDataFromControllerToView.Controllers
                 Gender = "Male"
             };
             ViewBag.Student = student;
+            return View();*/
             return View();
+
+
         }
     }
 }
